@@ -1,39 +1,39 @@
-# Scraping di Informazioni da Siti Web
+# Scraping of Information from Websites
 
-Questo è un programma Python che effettua lo scraping di informazioni da siti web correlati a professionisti medici e li salva in un file CSV.
+This is a Python program that scrapes information from medical professional related websites and saves it to a CSV file.
 
-## Dipendenze
+## Addictions
 
-Il programma utilizza le seguenti librerie Python:
+The program uses the following Python libraries:
 
-- `csv`: Per la gestione dei file CSV.
-- `requests`: Per effettuare richieste HTTP.
-- `beautifulsoup4`: Per il parsing dell'HTML.
-- `collections`: Per contare gli elementi in una lista.
-- `re`: Per eseguire espressioni regolari.
-- `os`: Per operazioni di sistema come la verifica dell'esistenza di file.
-- `subprocess`: Per eseguire comandi di sistema come il ping.
-- `time`: Per l'aggiunta di ritardi.
+- `csv`: For handling CSV files.
+- `requests`: To make HTTP requests.
+- `beautifulsoup4`: For parsing HTML.
+- `collections`: To count the elements in a list.
+- `re`: To execute regular expressions.
+- `os`: For system operations such as checking for file existence.
+- `subprocess`: To execute system commands like ping.
+- `time`: For adding delays.
 
-## Funzionalità Principali
+## Main Features
 
-- `scarica_nomi_citta()`: Scarica i nomi delle città dall'url fornito e restituisce una lista di nomi.
-- `elemento_piu_ripetuto(lista)`: Trova l'elemento più comune in una lista utilizzando `Counter`.
-- `get_links(url)`: Estrae tutti i link da una pagina web.
-- `get_username(url)`: Estrae il nome utente da una pagina web.
-- `find_phone_number(url)`: Trova i numeri di telefono utilizzando espressioni regolari.
-- `rimuovi_duplicati_csv(input_file, output_file)`: Rimuove i duplicati da un file CSV.
-- `lista_senza_ripetizioni(lista)`: Restituisce una lista senza elementi duplicati.
-- `is_id_present(file_path, id_valore)`: Verifica se un ID è presente in un file CSV.
-- `aggiungi_datapoint_a_csv(file_path, datapoint)`: Aggiunge un datapoint a un file CSV.
-- `create_empty_csv(file_path)`: Crea un file CSV vuoto se non esiste.
-- `check_website_exists(link)`: Verifica l'esistenza di un sito web utilizzando il ping.
-- Logica principale per effettuare lo scraping di informazioni da siti web.
+- `fetch_city_names()`: Fetch the city names from the provided url and return a list of names.
+- `most_repeating_item(list)`: Find the most common item in a list using `Counter`.
+- `get_links(url)`: Extract all links from a web page.
+- `get_username(url)`: Extracts the username from a web page.
+- `find_phone_number(url)`: Find phone numbers using regular expressions.
+- `remove_duplicates_csv(input_file, output_file)`: Removes duplicates from a CSV file.
+- `list_without_repeating(list)`: Returns a list with no duplicate elements.
+- `is_id_present(file_path, id_value)`: Check if an ID is present in a CSV file.
+- `add_datapoint_to_csv(file_path, datapoint)`: Add a datapoint to a CSV file.
+- `create_empty_csv(file_path)`: Create an empty CSV file if it doesn't exist.
+- `check_website_exists(link)`: Check if a website exists using ping.
+- Main rationale for scraping information from websites.
 
-## Utilizzo
+## Usage
 
-1. Assicurarsi che le dipendenze elencate siano installate.
-2. Eseguire il file Python `main.py`.
-3. Il programma scaricherà informazioni da vari siti web, filtrando per professionisti medici e città specifiche, e le salverà in un file CSV.
+1. Make sure the listed dependencies are installed.
+2. Run the Python `main.py` file.
+3. The program will download information from various websites, filtering by medical professionals and specific cities, and save it in a CSV file.
 
-Assicurarsi di rispettare le leggi locali e i termini d'uso dei siti web quando si effettua lo scraping di informazioni.
+Be sure to comply with local laws and website terms of use when scraping information.
