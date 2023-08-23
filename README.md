@@ -36,7 +36,7 @@ The program uses the following Python libraries:
 ## Usage
 
 1. Make sure the listed dependencies are installed.
-2. Run the Python `main.py` file.
+2. Run the Python `app.py` file.
 3. The program will download information from various websites, filtering by medical professionals and specific cities, and save it in a CSV file.
 
 Be sure to comply with local laws and website terms of use when scraping information.
